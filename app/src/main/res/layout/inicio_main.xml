@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioActivity">
+
+    <ImageView
+        android:id="@+id/imagenFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/fondopp" />
+
+    <TextView
+        android:id="@+id/textOne"
+        android:layout_width="357dp"
+        android:layout_height="185dp"
+
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/almendra_sc"
+        android:text="Tu Comida Favorita En Minutos"
+
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagenFondo" />
+
+    <TextView
+        android:id="@+id/textTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:fontFamily="@font/abril_fatface"
+        android:gravity="center"
+        android:text="Rapido y Sabroso"
+
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imagenFondo"
+        app:layout_constraintTop_toBottomOf="@+id/imageTwo" />
+
+    <ImageView
+        android:id="@+id/imageTwo"
+        android:layout_width="394dp"
+        android:layout_height="416dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imagenFondo"
+        app:layout_constraintTop_toBottomOf="@+id/textOne"
+        app:srcCompat="@mipmap/fondopapu" />
+
+    <TextView
+        android:id="@+id/textTree"
+        android:layout_width="391dp"
+        android:layout_height="61dp"
+        android:fontFamily="@font/almendra_sc"
+        android:gravity="center"
+        android:text="Explora un mundo de sabores desde tu dispositivo móvil"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textTwo"
+        app:layout_constraintStart_toStartOf="@+id/textTwo"
+        app:layout_constraintTop_toBottomOf="@+id/textTwo"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/inscribirseBtn"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:background="@drawable/color_inscribirse"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:onClick="registrar"
+        android:text="Inscribirse"
+        android:textColor="#FFF9FB"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="@+id/textTree"
+        app:layout_constraintTop_toBottomOf="@+id/textTree"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <TextView
+        android:id="@+id/accesoBtn"
+        android:layout_width="119dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/color_inscribirse"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:onClick="Iniciar_secion"
+        android:text="Acceso"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textTree"
+        app:layout_constraintTop_toBottomOf="@+id/textTree"
+        app:layout_constraintVertical_bias="0.321" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

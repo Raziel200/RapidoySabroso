@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/btn_1"
+            android:title="Menu" />
+        <item
+            android:id="@+id/nav_comida_diaria"
+            android:icon="@drawable/comida_diaria"
+            android:title="Comida diaria" />
+        <item
+            android:id="@+id/nav_favorito"
+            android:icon="@drawable/btn_2"
+            android:title="Favorito" />
+        <item
+            android:id="@+id/nav_carrito"
+            android:icon="@drawable/btn_3"
+            android:title="Favorito" />
+
+    </group>
+</menu>
